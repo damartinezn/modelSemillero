@@ -1,10 +1,13 @@
 package com.clearminds.dam.dtos;
 
+import java.util.Date;
+
 public class Estudiante {
 	private String nombre;
 	private String apellido;
 	private int id;
 	private int edad;
+	private String fechaActual;
 
 	public Estudiante(){
 		
@@ -15,7 +18,7 @@ public class Estudiante {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.id = id;
-		this.edad = edad;
+		this.edad = edad;		
 	}
 
 	public Estudiante(String nombre, String apellido) {
@@ -59,6 +62,14 @@ public class Estudiante {
 
 	public void setEdad(int edad) {
 		this.edad = edad;
+	}
+
+	public String getFechaActual() {
+		return fechaActual;
+	}
+
+	public void setFechaActual(String fechaActual) {
+		this.fechaActual = fechaActual;
 	}
 	
 	
